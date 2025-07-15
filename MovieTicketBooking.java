@@ -26,7 +26,7 @@ class Movie {
             return false;
         }
         if (seats[seatNumber - 1]) {
-            System.out.println("!!! Seat already booked. !!!");
+            System.out.println("!!! Seat is already booked. !!!");
             return false;
         }
         seats[seatNumber - 1] = true;
@@ -44,8 +44,8 @@ class BookingSystem {
 
     void loadMovies() {
         movies.put(1, new Movie(1, "Avengers: Endgame", 10));
-        movies.put(2, new Movie(2, "Inception", 8));
-        movies.put(3, new Movie(3, "Interstellar", 12));
+        movies.put(2, new Movie(2, "F1: The Movie", 8));
+        movies.put(3, new Movie(3, "Pirates of the Caribbean: The Curse of the Black Pearl", 12));
     }
 
     void start() {
